@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+    </head>
+    <body>
+        <script src="./promise.js"></script>
+        <script>
+            const p=new Promise((resolve,reject)=>{
+                throw 9
+            })
+            p
+            .then(
+                (value)=>{
+                console.log(value)
+            })
+            .catch(
+                reason=>{
+                console.log(reason)
+            })
+        </script>
+    </body>
+</html>
